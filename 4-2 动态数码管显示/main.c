@@ -44,7 +44,7 @@ void delay(unsigned int x)		//@11.0592MHz
 }
 void show_digital(char num, char index)
 {
-	char led_digital[] = {
+	static char led_digital[] = {
 		0x06, 0x5b, 0x4f, // 1, 2, 3
 		0x66, 0x6d, 0x7d, // 4, 5, 6
 		0x07, 0x7f, 0x6f,// 7, 8, 9
